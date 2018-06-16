@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
+list
+-
+vector
+-
+memory
+-
+Unidad.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
+
+/home/jonathan/ProyectoPOO/RTSGame/Include/Datos.h
+
+/home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
+iostream
+-
+
+/home/jonathan/ProyectoPOO/RTSGame/Source/Controlador.cpp
+../Include/Controlador.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
+list
+-
+
+/home/jonathan/ProyectoPOO/RTSGame/Source/Game.cpp
+
+/home/jonathan/ProyectoPOO/RTSGame/Source/Unidad.cpp
+../Include/Unidad.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
+
+/home/jonathan/ProyectoPOO/RTSGame/Source/main.cpp
+iostream
+-
+../Include/Controlador.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
+../Include/Datos.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Datos.h
+

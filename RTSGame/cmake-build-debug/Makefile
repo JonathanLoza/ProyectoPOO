@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/22/bin/cmake/bin/cmake
+CMAKE_COMMAND = /snap/clion/25/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/22/bin/cmake/bin/cmake -E remove -f
+RM = /snap/clion/25/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/22/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/25/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/22/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/25/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,6 +123,60 @@ RTSGame/fast:
 	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/build
 .PHONY : RTSGame/fast
 
+Source/Controlador.o: Source/Controlador.cpp.o
+
+.PHONY : Source/Controlador.o
+
+# target to build an object file
+Source/Controlador.cpp.o:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o
+.PHONY : Source/Controlador.cpp.o
+
+Source/Controlador.i: Source/Controlador.cpp.i
+
+.PHONY : Source/Controlador.i
+
+# target to preprocess a source file
+Source/Controlador.cpp.i:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Controlador.cpp.i
+.PHONY : Source/Controlador.cpp.i
+
+Source/Controlador.s: Source/Controlador.cpp.s
+
+.PHONY : Source/Controlador.s
+
+# target to generate assembly for a file
+Source/Controlador.cpp.s:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Controlador.cpp.s
+.PHONY : Source/Controlador.cpp.s
+
+Source/Datos.o: Source/Datos.cpp.o
+
+.PHONY : Source/Datos.o
+
+# target to build an object file
+Source/Datos.cpp.o:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.o
+.PHONY : Source/Datos.cpp.o
+
+Source/Datos.i: Source/Datos.cpp.i
+
+.PHONY : Source/Datos.i
+
+# target to preprocess a source file
+Source/Datos.cpp.i:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.i
+.PHONY : Source/Datos.cpp.i
+
+Source/Datos.s: Source/Datos.cpp.s
+
+.PHONY : Source/Datos.s
+
+# target to generate assembly for a file
+Source/Datos.cpp.s:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.s
+.PHONY : Source/Datos.cpp.s
+
 Source/Game.o: Source/Game.cpp.o
 
 .PHONY : Source/Game.o
@@ -149,6 +203,33 @@ Source/Game.s: Source/Game.cpp.s
 Source/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Game.cpp.s
 .PHONY : Source/Game.cpp.s
+
+Source/Unidad.o: Source/Unidad.cpp.o
+
+.PHONY : Source/Unidad.o
+
+# target to build an object file
+Source/Unidad.cpp.o:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o
+.PHONY : Source/Unidad.cpp.o
+
+Source/Unidad.i: Source/Unidad.cpp.i
+
+.PHONY : Source/Unidad.i
+
+# target to preprocess a source file
+Source/Unidad.cpp.i:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Unidad.cpp.i
+.PHONY : Source/Unidad.cpp.i
+
+Source/Unidad.s: Source/Unidad.cpp.s
+
+.PHONY : Source/Unidad.s
+
+# target to generate assembly for a file
+Source/Unidad.cpp.s:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Unidad.cpp.s
+.PHONY : Source/Unidad.cpp.s
 
 Source/main.o: Source/main.cpp.o
 
@@ -186,9 +267,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RTSGame"
+	@echo "... Source/Controlador.o"
+	@echo "... Source/Controlador.i"
+	@echo "... Source/Controlador.s"
+	@echo "... Source/Datos.o"
+	@echo "... Source/Datos.i"
+	@echo "... Source/Datos.s"
 	@echo "... Source/Game.o"
 	@echo "... Source/Game.i"
 	@echo "... Source/Game.s"
+	@echo "... Source/Unidad.o"
+	@echo "... Source/Unidad.i"
+	@echo "... Source/Unidad.s"
 	@echo "... Source/main.o"
 	@echo "... Source/main.i"
 	@echo "... Source/main.s"
