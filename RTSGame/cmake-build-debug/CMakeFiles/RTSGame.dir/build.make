@@ -153,28 +153,52 @@ CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o.provides: CMakeFiles/RTSGame.dir
 CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o.provides.build: CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o
 
 
-CMakeFiles/RTSGame.dir/Source/Datos.cpp.o: CMakeFiles/RTSGame.dir/flags.make
-CMakeFiles/RTSGame.dir/Source/Datos.cpp.o: ../Source/Datos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RTSGame.dir/Source/Datos.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RTSGame.dir/Source/Datos.cpp.o -c /home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
+CMakeFiles/RTSGame.dir/Source/Choza.cpp.o: CMakeFiles/RTSGame.dir/flags.make
+CMakeFiles/RTSGame.dir/Source/Choza.cpp.o: ../Source/Choza.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RTSGame.dir/Source/Choza.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RTSGame.dir/Source/Choza.cpp.o -c /home/jonathan/ProyectoPOO/RTSGame/Source/Choza.cpp
 
-CMakeFiles/RTSGame.dir/Source/Datos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RTSGame.dir/Source/Datos.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp > CMakeFiles/RTSGame.dir/Source/Datos.cpp.i
+CMakeFiles/RTSGame.dir/Source/Choza.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RTSGame.dir/Source/Choza.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/ProyectoPOO/RTSGame/Source/Choza.cpp > CMakeFiles/RTSGame.dir/Source/Choza.cpp.i
 
-CMakeFiles/RTSGame.dir/Source/Datos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RTSGame.dir/Source/Datos.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp -o CMakeFiles/RTSGame.dir/Source/Datos.cpp.s
+CMakeFiles/RTSGame.dir/Source/Choza.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RTSGame.dir/Source/Choza.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/ProyectoPOO/RTSGame/Source/Choza.cpp -o CMakeFiles/RTSGame.dir/Source/Choza.cpp.s
 
-CMakeFiles/RTSGame.dir/Source/Datos.cpp.o.requires:
+CMakeFiles/RTSGame.dir/Source/Choza.cpp.o.requires:
 
-.PHONY : CMakeFiles/RTSGame.dir/Source/Datos.cpp.o.requires
+.PHONY : CMakeFiles/RTSGame.dir/Source/Choza.cpp.o.requires
 
-CMakeFiles/RTSGame.dir/Source/Datos.cpp.o.provides: CMakeFiles/RTSGame.dir/Source/Datos.cpp.o.requires
-	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.o.provides.build
-.PHONY : CMakeFiles/RTSGame.dir/Source/Datos.cpp.o.provides
+CMakeFiles/RTSGame.dir/Source/Choza.cpp.o.provides: CMakeFiles/RTSGame.dir/Source/Choza.cpp.o.requires
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Choza.cpp.o.provides.build
+.PHONY : CMakeFiles/RTSGame.dir/Source/Choza.cpp.o.provides
 
-CMakeFiles/RTSGame.dir/Source/Datos.cpp.o.provides.build: CMakeFiles/RTSGame.dir/Source/Datos.cpp.o
+CMakeFiles/RTSGame.dir/Source/Choza.cpp.o.provides.build: CMakeFiles/RTSGame.dir/Source/Choza.cpp.o
+
+
+CMakeFiles/RTSGame.dir/Source/Map.cpp.o: CMakeFiles/RTSGame.dir/flags.make
+CMakeFiles/RTSGame.dir/Source/Map.cpp.o: ../Source/Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RTSGame.dir/Source/Map.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RTSGame.dir/Source/Map.cpp.o -c /home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp
+
+CMakeFiles/RTSGame.dir/Source/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RTSGame.dir/Source/Map.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp > CMakeFiles/RTSGame.dir/Source/Map.cpp.i
+
+CMakeFiles/RTSGame.dir/Source/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RTSGame.dir/Source/Map.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp -o CMakeFiles/RTSGame.dir/Source/Map.cpp.s
+
+CMakeFiles/RTSGame.dir/Source/Map.cpp.o.requires:
+
+.PHONY : CMakeFiles/RTSGame.dir/Source/Map.cpp.o.requires
+
+CMakeFiles/RTSGame.dir/Source/Map.cpp.o.provides: CMakeFiles/RTSGame.dir/Source/Map.cpp.o.requires
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Map.cpp.o.provides.build
+.PHONY : CMakeFiles/RTSGame.dir/Source/Map.cpp.o.provides
+
+CMakeFiles/RTSGame.dir/Source/Map.cpp.o.provides.build: CMakeFiles/RTSGame.dir/Source/Map.cpp.o
 
 
 # Object files for target RTSGame
@@ -183,7 +207,8 @@ RTSGame_OBJECTS = \
 "CMakeFiles/RTSGame.dir/Source/Game.cpp.o" \
 "CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o" \
 "CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o" \
-"CMakeFiles/RTSGame.dir/Source/Datos.cpp.o"
+"CMakeFiles/RTSGame.dir/Source/Choza.cpp.o" \
+"CMakeFiles/RTSGame.dir/Source/Map.cpp.o"
 
 # External object files for target RTSGame
 RTSGame_EXTERNAL_OBJECTS =
@@ -192,7 +217,8 @@ RTSGame: CMakeFiles/RTSGame.dir/Source/main.cpp.o
 RTSGame: CMakeFiles/RTSGame.dir/Source/Game.cpp.o
 RTSGame: CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o
 RTSGame: CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o
-RTSGame: CMakeFiles/RTSGame.dir/Source/Datos.cpp.o
+RTSGame: CMakeFiles/RTSGame.dir/Source/Choza.cpp.o
+RTSGame: CMakeFiles/RTSGame.dir/Source/Map.cpp.o
 RTSGame: CMakeFiles/RTSGame.dir/build.make
 RTSGame: /usr/lib/x86_64-linux-gnu/libsfml-audio.so
 RTSGame: /usr/lib/x86_64-linux-gnu/libsfml-network.so
@@ -200,7 +226,7 @@ RTSGame: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 RTSGame: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 RTSGame: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 RTSGame: CMakeFiles/RTSGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable RTSGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable RTSGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RTSGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -212,7 +238,8 @@ CMakeFiles/RTSGame.dir/requires: CMakeFiles/RTSGame.dir/Source/main.cpp.o.requir
 CMakeFiles/RTSGame.dir/requires: CMakeFiles/RTSGame.dir/Source/Game.cpp.o.requires
 CMakeFiles/RTSGame.dir/requires: CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o.requires
 CMakeFiles/RTSGame.dir/requires: CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o.requires
-CMakeFiles/RTSGame.dir/requires: CMakeFiles/RTSGame.dir/Source/Datos.cpp.o.requires
+CMakeFiles/RTSGame.dir/requires: CMakeFiles/RTSGame.dir/Source/Choza.cpp.o.requires
+CMakeFiles/RTSGame.dir/requires: CMakeFiles/RTSGame.dir/Source/Map.cpp.o.requires
 
 .PHONY : CMakeFiles/RTSGame.dir/requires
 

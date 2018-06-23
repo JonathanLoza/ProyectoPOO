@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
+Unidad.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
+
 /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
 list
 -
@@ -18,7 +22,33 @@ Unidad.h
 
 /home/jonathan/ProyectoPOO/RTSGame/Include/Datos.h
 
+/home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
+SFML/Graphics.hpp
+-
+SFML/Audio.hpp
+/home/jonathan/ProyectoPOO/RTSGame/Include/SFML/Audio.hpp
+Map.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
+
+/home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
+SFML/Graphics.hpp
+-
+Unidad.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
+Choza.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
+iostream
+-
+
+/home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+/home/jonathan/ProyectoPOO/RTSGame/Source/Choza.cpp
+../Include/Choza.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
 iostream
 -
 
@@ -29,6 +59,12 @@ list
 -
 
 /home/jonathan/ProyectoPOO/RTSGame/Source/Game.cpp
+../Include/Game.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
+
+/home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp
+../Include/Map.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
 
 /home/jonathan/ProyectoPOO/RTSGame/Source/Unidad.cpp
 ../Include/Unidad.h
@@ -41,4 +77,6 @@ iostream
 /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
 ../Include/Datos.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Datos.h
+../Include/Game.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
 

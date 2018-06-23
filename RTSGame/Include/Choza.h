@@ -1,6 +1,7 @@
 #ifndef RTSGAME_CHOZA_H
 #define RTSGAME_CHOZA_H
 
+
 #include "Unidad.h"
 
 class Estructura{
@@ -9,6 +10,7 @@ public:
     Estructura(int vida):vida(vida){}
     virtual ~Estructura(){}
 };
+
 class Pre:public Estructura{
     int preciochachimbo;
     int preciomentor;
@@ -31,7 +33,12 @@ class Cubiculo:public Estructura{
     int precio_vem;
     int precio_um;
 public:
-    Cubiculo(int vida):Estructura(vida){}
+    Cubiculo(int vida):Estructura(vida),mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false){
+        mTexture.loadFromFile("/home/jonathan/ProyectoPOO/RTSGame/Media/Choza.png");
+        mChoza.setTexture(mTexture);
+        mChoza.setPosition(200.f, 200.f);
+        mChoza.setScale(3,3);
+    }
     void update_vida_cachimbo(int x);
     void update_atk_cachimbo(int x);
     void update_def_cachimbo(int x);
@@ -45,6 +52,14 @@ public:
     void update_velocidad_mentor(int x);
     void update_mentor(int x);
 
+public:
+    sf::Texture mTexture;
+    sf::Sprite mChoza;
+    bool mIsMovingUp;
+    bool mIsMovingDown;
+    bool mIsMovingRight;
+    bool mIsMovingLeft;
 
 };
+
 #endif //RTSGAME_CHOZA_H

@@ -1,5 +1,6 @@
 #ifndef RTSGAME_DATOS_H
 #define RTSGAME_DATOS_H
+//Maximo unidades
 
 
 //Datos del cachimbo
@@ -29,5 +30,8 @@ int TA_atk=12;
 int TA_def=23;
 int TA_rango=11;
 int TA_velocidad=1;
+
+
+
 
 #endif //RTSGAME_DATOS_H

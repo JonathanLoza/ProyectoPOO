@@ -16,6 +16,7 @@ int Unidad::get_rango() {
     return rango;
 }
 
+
 void Aliadas::mover() {
     cout<<"aliada se mueve a: "<<velocidad<<" de velocidad"<<endl;
 }

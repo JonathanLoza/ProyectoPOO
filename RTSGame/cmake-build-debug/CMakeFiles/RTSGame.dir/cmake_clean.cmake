@@ -3,7 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RTSGame.dir/Source/Game.cpp.o"
   "CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o"
   "CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o"
-  "CMakeFiles/RTSGame.dir/Source/Datos.cpp.o"
+  "CMakeFiles/RTSGame.dir/Source/Choza.cpp.o"
+  "CMakeFiles/RTSGame.dir/Source/Map.cpp.o"
   "RTSGame.pdb"
   "RTSGame"
 )

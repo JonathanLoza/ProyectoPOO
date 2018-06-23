@@ -123,6 +123,33 @@ RTSGame/fast:
 	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/build
 .PHONY : RTSGame/fast
 
+Source/Choza.o: Source/Choza.cpp.o
+
+.PHONY : Source/Choza.o
+
+# target to build an object file
+Source/Choza.cpp.o:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Choza.cpp.o
+.PHONY : Source/Choza.cpp.o
+
+Source/Choza.i: Source/Choza.cpp.i
+
+.PHONY : Source/Choza.i
+
+# target to preprocess a source file
+Source/Choza.cpp.i:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Choza.cpp.i
+.PHONY : Source/Choza.cpp.i
+
+Source/Choza.s: Source/Choza.cpp.s
+
+.PHONY : Source/Choza.s
+
+# target to generate assembly for a file
+Source/Choza.cpp.s:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Choza.cpp.s
+.PHONY : Source/Choza.cpp.s
+
 Source/Controlador.o: Source/Controlador.cpp.o
 
 .PHONY : Source/Controlador.o
@@ -150,33 +177,6 @@ Source/Controlador.cpp.s:
 	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Controlador.cpp.s
 .PHONY : Source/Controlador.cpp.s
 
-Source/Datos.o: Source/Datos.cpp.o
-
-.PHONY : Source/Datos.o
-
-# target to build an object file
-Source/Datos.cpp.o:
-	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.o
-.PHONY : Source/Datos.cpp.o
-
-Source/Datos.i: Source/Datos.cpp.i
-
-.PHONY : Source/Datos.i
-
-# target to preprocess a source file
-Source/Datos.cpp.i:
-	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.i
-.PHONY : Source/Datos.cpp.i
-
-Source/Datos.s: Source/Datos.cpp.s
-
-.PHONY : Source/Datos.s
-
-# target to generate assembly for a file
-Source/Datos.cpp.s:
-	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.s
-.PHONY : Source/Datos.cpp.s
-
 Source/Game.o: Source/Game.cpp.o
 
 .PHONY : Source/Game.o
@@ -203,6 +203,33 @@ Source/Game.s: Source/Game.cpp.s
 Source/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Game.cpp.s
 .PHONY : Source/Game.cpp.s
+
+Source/Map.o: Source/Map.cpp.o
+
+.PHONY : Source/Map.o
+
+# target to build an object file
+Source/Map.cpp.o:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Map.cpp.o
+.PHONY : Source/Map.cpp.o
+
+Source/Map.i: Source/Map.cpp.i
+
+.PHONY : Source/Map.i
+
+# target to preprocess a source file
+Source/Map.cpp.i:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Map.cpp.i
+.PHONY : Source/Map.cpp.i
+
+Source/Map.s: Source/Map.cpp.s
+
+.PHONY : Source/Map.s
+
+# target to generate assembly for a file
+Source/Map.cpp.s:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Map.cpp.s
+.PHONY : Source/Map.cpp.s
 
 Source/Unidad.o: Source/Unidad.cpp.o
 
@@ -267,15 +294,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RTSGame"
+	@echo "... Source/Choza.o"
+	@echo "... Source/Choza.i"
+	@echo "... Source/Choza.s"
 	@echo "... Source/Controlador.o"
 	@echo "... Source/Controlador.i"
 	@echo "... Source/Controlador.s"
-	@echo "... Source/Datos.o"
-	@echo "... Source/Datos.i"
-	@echo "... Source/Datos.s"
 	@echo "... Source/Game.o"
 	@echo "... Source/Game.i"
 	@echo "... Source/Game.s"
+	@echo "... Source/Map.o"
+	@echo "... Source/Map.i"
+	@echo "... Source/Map.s"
 	@echo "... Source/Unidad.o"
 	@echo "... Source/Unidad.i"
 	@echo "... Source/Unidad.s"
