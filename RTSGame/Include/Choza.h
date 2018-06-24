@@ -34,7 +34,7 @@ class Cubiculo:public Estructura{
     int precio_um;
 public:
     Cubiculo(int vida):Estructura(vida),mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false){
-        mTexture.loadFromFile("/home/jonathan/ProyectoPOO/RTSGame/Media/Choza.png");
+        mTexture.loadFromFile("../Media/Choza.png");
         mChoza.setTexture(mTexture);
         mChoza.setPosition(200.f, 200.f);
         mChoza.setScale(3,3);
