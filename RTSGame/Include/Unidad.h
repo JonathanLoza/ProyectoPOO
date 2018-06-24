@@ -48,7 +48,7 @@ public:
     bool mIsMovingLeft;
 public:
     Cachimbo(int vida, int atk, int def, int rango, int velocidad):Aliadas(vida,atk,def,rango, velocidad), mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false){
-        mTexture.loadFromFile("/home/jonathan/ProyectoPOO/RTSGame/Media/Hyde.png");
+        mTexture.loadFromFile("../Media/Hyde.png");
         mSprite.setTexture(mTexture);
         mSprite.setPosition(100.f, 100.f);
         mSprite.setScale(0.1,0.1);
@@ -71,7 +71,7 @@ public:
     bool mIsMovingLeft;
 public:
     Profesor(int vida, int atk, int def, int rango, int velocidad):Enemigos(vida,atk,def,rango, velocidad), mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false){
-        mTexture.loadFromFile("/home/jonathan/ProyectoPOO/RTSGame/Media/profe.png");
+        mTexture.loadFromFile("../Media/profe.png");
         mProfe.setTexture(mTexture);
         mProfe.setPosition(1200.f, 1200.f);
         mProfe.setScale(0.3,0.3);
