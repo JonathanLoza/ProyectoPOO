@@ -6,6 +6,7 @@
 #include "Choza.h"
 #include <iostream>
 class Map{
+    const float Speed = 200.f;
 public:
     Map();
     sf::Texture mTexture;
@@ -13,10 +14,15 @@ public:
     Cachimbo c;
     Profesor p;
     Cubiculo choza;
+public:
     bool mIsMovingUp;
     bool mIsMovingDown;
     bool mIsMovingRight;
     bool mIsMovingLeft;
+    float altura=0;
+    float ancho=0;
+public:
+    void mover(sf::Time deltaTime);
 };
 
 

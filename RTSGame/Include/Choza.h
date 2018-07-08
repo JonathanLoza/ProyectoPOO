@@ -7,8 +7,17 @@
 class Estructura{
     int vida;
 public:
-    Estructura(int vida):vida(vida){}
+    sf::Texture mTexture;
+    sf::Sprite mChoza;
+    bool mIsMovingUp;
+    bool mIsMovingDown;
+    bool mIsMovingRight;
+    bool mIsMovingLeft;
+    const float Speed = 200.f;
+public:
+    Estructura(int vida):vida(vida),mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false){}
     virtual ~Estructura(){}
+    virtual void mover(sf::Time deltaTime)=0;
 };
 
 class Pre:public Estructura{
@@ -33,7 +42,7 @@ class Cubiculo:public Estructura{
     int precio_vem;
     int precio_um;
 public:
-    Cubiculo(int vida):Estructura(vida),mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false){
+    Cubiculo(int vida):Estructura(vida){
         mTexture.loadFromFile("../Media/Choza.png");
         mChoza.setTexture(mTexture);
         mChoza.setPosition(200.f, 200.f);
@@ -51,14 +60,8 @@ public:
     void update_rango_mentor(int x);
     void update_velocidad_mentor(int x);
     void update_mentor(int x);
-
 public:
-    sf::Texture mTexture;
-    sf::Sprite mChoza;
-    bool mIsMovingUp;
-    bool mIsMovingDown;
-    bool mIsMovingRight;
-    bool mIsMovingLeft;
+    void mover(sf::Time deltaTime) override ;
 
 };
 

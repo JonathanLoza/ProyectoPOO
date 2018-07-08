@@ -3,7 +3,7 @@
 using  namespace std;
 void Controller::move_all() {
     for(auto unidad:unidades){
-        unidad->mover();
+        //unidad->mover();
     }
 }
 

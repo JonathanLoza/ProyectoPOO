@@ -1,7 +1,7 @@
 #include "../Include/Game.h"
 //#include "../Include/Datos.h"
 
-const float Game::PlayerSpeed = 200.f;
+sf::Vector2f mousePos;
 const sf::Time Game::TimePerFrame = sf::seconds(1.f/60.f);
 
 Game::Game():mWindow(sf::VideoMode(1400, 1200), "SFML Application"),map(){
@@ -23,11 +23,16 @@ void Game::run()
         {
             timeSinceLastUpdate -= TimePerFrame;
             processEvents();
+            sf::Vector2f mousePos=sf::Vector2f(sf::Mouse::getPosition(mWindow));
             update(TimePerFrame);
         }
         render();
     }
 }
+void Game::handleMouseInput(sf::Keyboard::Key key, bool isPressed) {
+        map.c.movingmouse = isPressed;
+}
+
 void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
 {
     if (key == sf::Keyboard::W )
@@ -62,6 +67,33 @@ void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
         map.p.mIsMovingDown = isPressed;
         map.choza.mIsMovingDown= isPressed;
     }
+
+    if (map.altura <= 0) { // con el techo 0
+        map.mIsMovingUp=false;
+        map.c.mIsMovingDown = false;
+        map.p.mIsMovingDown = false;
+        map.choza.mIsMovingDown= false;
+
+    }
+    if (map.altura >= 80600){ // con el suelo 80600
+        map.mIsMovingDown = false;
+        map.c.mIsMovingUp = false;
+        map.p.mIsMovingUp = false;
+        map.choza.mIsMovingUp= false;
+
+    }
+    if (map.ancho <= 0){ // con la izquierda 0
+        map.mIsMovingLeft = false;
+        map.c.mIsMovingRight = false;
+        map.p.mIsMovingRight =false;
+        map.choza.mIsMovingRight= false;
+    }
+    if (map.ancho >= 88600){ // con la derecha 88600
+        map.mIsMovingRight = false;
+        map.c.mIsMovingLeft = false;
+        map.p.mIsMovingLeft =false;
+        map.choza.mIsMovingLeft= false;
+    }
 }
 
 void Game::processEvents() {
@@ -70,8 +102,20 @@ void Game::processEvents() {
         switch (event.type)
         { case sf::Event::KeyPressed:handlePlayerInput(event.key.code, true);
                 break;
-            case sf::Event::KeyReleased:handlePlayerInput(event.key.code, false);
+            case sf::Event::KeyReleased:
+                if(event.key.code==sf::Keyboard::T)
+                    handleMouseInput(event.key.code,false);
+                else
+                    handlePlayerInput(event.key.code, false);
                 break;
+            case sf::Event::MouseButtonPressed:
+            {
+                mousePos = sf::Vector2f(event.mouseButton.x,event.mouseButton.y);
+                if (event.mouseButton.button == sf::Mouse::Right)
+                    handleMouseInput(event.key.code,true);
+
+                break;
+            }
             case sf::Event::Closed:
                 mWindow.close();
                 break;
@@ -81,53 +125,22 @@ void Game::processEvents() {
 
 void Game::update(sf::Time deltaTime)
 {
-    sf::Vector2f movementP(0.f, 0.f);
-    sf::Vector2f movementM(0.f, 0.f);
-    sf::Vector2f movementProfe(0.f, 0.f);
-    sf::Vector2f movementChoza(0.f, 0.f);
 
-    if (map.c.mIsMovingUp)
-        movementP.y -= PlayerSpeed;
-    if (map.c.mIsMovingDown)
-        movementP.y += PlayerSpeed;
-    if (map.c.mIsMovingLeft)
-        movementP.x -= PlayerSpeed;
-    if (map.c.mIsMovingRight)
-        movementP.x += PlayerSpeed;
-    if (map.p.mIsMovingUp)
-        movementProfe.y -= PlayerSpeed;
-    if (map.p.mIsMovingDown)
-        movementProfe.y += PlayerSpeed;
-    if (map.p.mIsMovingLeft)
-        movementProfe.x -= PlayerSpeed;
-    if (map.p.mIsMovingRight)
-        movementProfe.x += PlayerSpeed;
-    if (map.choza.mIsMovingUp)
-        movementChoza.y -= PlayerSpeed;
-    if (map.choza.mIsMovingDown)
-        movementChoza.y += PlayerSpeed;
-    if (map.choza.mIsMovingLeft)
-        movementChoza.x -= PlayerSpeed;
-    if (map.choza.mIsMovingRight)
-        movementChoza.x += PlayerSpeed;
-    if (map.mIsMovingUp)
-        movementM.y += PlayerSpeed;
-    if (map.mIsMovingDown)
-        movementM.y -= PlayerSpeed;
-    if (map.mIsMovingLeft)
-        movementM.x += PlayerSpeed;
-    if (map.mIsMovingRight)
-        movementM.x -= PlayerSpeed;
-    map.choza.mChoza.move(movementChoza * deltaTime.asSeconds());
-    map.p.mProfe.move(movementProfe * deltaTime.asSeconds());
-    map.c.mSprite.move(movementP * deltaTime.asSeconds());
-    map.mMap.move(movementM * deltaTime.asSeconds());
+    map.c.moverMouse(TimePerFrame,mousePos);
+    map.c.mover(deltaTime);
+    map.mover(deltaTime);
+    map.p.mover(deltaTime);
+    map.choza.mover(deltaTime);
+
+
+
 }
 void Game::render() {
     mWindow.clear();
     mWindow.draw(map.mMap);
     mWindow.draw(map.choza.mChoza);
-    mWindow.draw(map.p.mProfe);
+    mWindow.draw(map.p.mSprite);
     mWindow.draw(map.c.mSprite);
     mWindow.display();
 }
+

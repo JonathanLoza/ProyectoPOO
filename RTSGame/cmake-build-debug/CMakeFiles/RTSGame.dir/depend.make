@@ -18,6 +18,7 @@ CMakeFiles/RTSGame.dir/Source/Game.cpp.o: ../Source/Game.cpp
 CMakeFiles/RTSGame.dir/Source/Map.cpp.o: ../Include/Choza.h
 CMakeFiles/RTSGame.dir/Source/Map.cpp.o: ../Include/Map.h
 CMakeFiles/RTSGame.dir/Source/Map.cpp.o: ../Include/Unidad.h
+CMakeFiles/RTSGame.dir/Source/Map.cpp.o: ../Source/Datos.cpp
 CMakeFiles/RTSGame.dir/Source/Map.cpp.o: ../Source/Map.cpp
 
 CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o: ../Include/Unidad.h
@@ -25,9 +26,9 @@ CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o: ../Source/Unidad.cpp
 
 CMakeFiles/RTSGame.dir/Source/main.cpp.o: ../Include/Choza.h
 CMakeFiles/RTSGame.dir/Source/main.cpp.o: ../Include/Controlador.h
-CMakeFiles/RTSGame.dir/Source/main.cpp.o: ../Include/Datos.h
 CMakeFiles/RTSGame.dir/Source/main.cpp.o: ../Include/Game.h
 CMakeFiles/RTSGame.dir/Source/main.cpp.o: ../Include/Map.h
 CMakeFiles/RTSGame.dir/Source/main.cpp.o: ../Include/Unidad.h
+CMakeFiles/RTSGame.dir/Source/main.cpp.o: ../Source/Datos.cpp
 CMakeFiles/RTSGame.dir/Source/main.cpp.o: ../Source/main.cpp
 

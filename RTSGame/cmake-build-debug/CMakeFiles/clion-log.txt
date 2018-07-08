@@ -1,4 +1,4 @@
-/snap/clion/25/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jonathan/ProyectoPOO/RTSGame
+/snap/clion/27/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jonathan/ProyectoPOO/RTSGame
 -- Found SFML .. in /usr/include
 -- Configuring done
 -- Generating done

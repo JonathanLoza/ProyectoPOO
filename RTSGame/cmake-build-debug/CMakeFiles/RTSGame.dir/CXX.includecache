@@ -20,8 +20,6 @@ memory
 Unidad.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
 
-/home/jonathan/ProyectoPOO/RTSGame/Include/Datos.h
-
 /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
 SFML/Graphics.hpp
 -
@@ -58,6 +56,8 @@ iostream
 list
 -
 
+/home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
+
 /home/jonathan/ProyectoPOO/RTSGame/Source/Game.cpp
 ../Include/Game.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
@@ -65,6 +65,8 @@ list
 /home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp
 ../Include/Map.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
+../Source/Datos.cpp
+/home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
 
 /home/jonathan/ProyectoPOO/RTSGame/Source/Unidad.cpp
 ../Include/Unidad.h
@@ -75,8 +77,8 @@ iostream
 -
 ../Include/Controlador.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
-../Include/Datos.h
-/home/jonathan/ProyectoPOO/RTSGame/Include/Datos.h
+Datos.cpp
+/home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
 ../Include/Game.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
 

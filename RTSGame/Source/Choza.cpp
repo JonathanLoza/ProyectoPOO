@@ -61,4 +61,18 @@ void Cubiculo::update_mentor(int x){
     update_vida_mentor(x);
 }
 
+void Cubiculo::mover(sf::Time deltaTime) {
+    sf::Vector2f movementChoza(0.f, 0.f);
+
+    if (mIsMovingUp)
+        movementChoza.y -= Speed;
+    if (mIsMovingDown)
+        movementChoza.y += Speed;
+    if (mIsMovingLeft)
+        movementChoza.x -= Speed;
+    if (mIsMovingRight)
+        movementChoza.x += Speed;
+    mChoza.move(movementChoza * deltaTime.asSeconds());
+}
+
 
