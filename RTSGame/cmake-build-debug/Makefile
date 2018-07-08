@@ -231,6 +231,33 @@ Source/Map.cpp.s:
 	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Map.cpp.s
 .PHONY : Source/Map.cpp.s
 
+Source/Sprite.o: Source/Sprite.cpp.o
+
+.PHONY : Source/Sprite.o
+
+# target to build an object file
+Source/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Sprite.cpp.o
+.PHONY : Source/Sprite.cpp.o
+
+Source/Sprite.i: Source/Sprite.cpp.i
+
+.PHONY : Source/Sprite.i
+
+# target to preprocess a source file
+Source/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Sprite.cpp.i
+.PHONY : Source/Sprite.cpp.i
+
+Source/Sprite.s: Source/Sprite.cpp.s
+
+.PHONY : Source/Sprite.s
+
+# target to generate assembly for a file
+Source/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Sprite.cpp.s
+.PHONY : Source/Sprite.cpp.s
+
 Source/Unidad.o: Source/Unidad.cpp.o
 
 .PHONY : Source/Unidad.o
@@ -306,6 +333,9 @@ help:
 	@echo "... Source/Map.o"
 	@echo "... Source/Map.i"
 	@echo "... Source/Map.s"
+	@echo "... Source/Sprite.o"
+	@echo "... Source/Sprite.i"
+	@echo "... Source/Sprite.s"
 	@echo "... Source/Unidad.o"
 	@echo "... Source/Unidad.i"
 	@echo "... Source/Unidad.s"

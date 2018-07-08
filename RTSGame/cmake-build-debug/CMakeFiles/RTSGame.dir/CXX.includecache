@@ -33,9 +33,15 @@ SFML/Graphics.hpp
 -
 Unidad.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
+Controlador.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
 Choza.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
 iostream
+-
+
+/home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
+SFML/Graphics.hpp
 -
 
 /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
@@ -43,6 +49,10 @@ SFML/Graphics.hpp
 -
 iostream
 -
+random
+-
+Sprite.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
 
 /home/jonathan/ProyectoPOO/RTSGame/Source/Choza.cpp
 ../Include/Choza.h
@@ -55,6 +65,8 @@ iostream
 /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
 list
 -
+../Include/Game.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
 
 /home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
 
@@ -67,6 +79,10 @@ list
 /home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
 ../Source/Datos.cpp
 /home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
+
+/home/jonathan/ProyectoPOO/RTSGame/Source/Sprite.cpp
+../Include/Sprite.h
+/home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
 
 /home/jonathan/ProyectoPOO/RTSGame/Source/Unidad.cpp
 ../Include/Unidad.h

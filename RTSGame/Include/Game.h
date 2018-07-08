@@ -12,14 +12,15 @@ private:
     void update(sf::Time deltaTime);
     void render();
     void handlePlayerInput(sf::Keyboard::Key key, bool isPressed);
-    void handleMouseInput(sf::Keyboard::Key key, bool isPressed);
+    void handleMouseInput( bool isPressed);
 public:
     Game();
     void run();
 private:
-    static const float		PlayerSpeed;
-    static const sf::Time	TimePerFrame;
+    static const float PlayerSpeed;
     sf::RenderWindow mWindow;
     Map map;
 };
 
+static sf::Vector2f mousePos;
+const sf::Time TimePerFrame = sf::seconds(1.f/60.f);

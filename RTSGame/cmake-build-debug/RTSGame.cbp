@@ -111,6 +111,9 @@
 		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp">
 			<Option target="RTSGame"/>
 		</Unit>
+		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Source/Sprite.cpp">
+			<Option target="RTSGame"/>
+		</Unit>
 		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Source/Unidad.cpp">
 			<Option target="RTSGame"/>
 		</Unit>

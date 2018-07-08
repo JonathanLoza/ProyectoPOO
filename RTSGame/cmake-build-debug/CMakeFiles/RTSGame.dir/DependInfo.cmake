@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Controlador.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o"
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Game.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Game.cpp.o"
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Map.cpp.o"
+  "/home/jonathan/ProyectoPOO/RTSGame/Source/Sprite.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Sprite.cpp.o"
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Unidad.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o"
   "/home/jonathan/ProyectoPOO/RTSGame/Source/main.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/main.cpp.o"
   )

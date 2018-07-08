@@ -3,25 +3,38 @@
 
 CMakeFiles/RTSGame.dir/Source/Choza.cpp.o
  /home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
  /home/jonathan/ProyectoPOO/RTSGame/Source/Choza.cpp
 CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
  /home/jonathan/ProyectoPOO/RTSGame/Source/Controlador.cpp
 CMakeFiles/RTSGame.dir/Source/Game.cpp.o
  /home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
  /home/jonathan/ProyectoPOO/RTSGame/Source/Game.cpp
 CMakeFiles/RTSGame.dir/Source/Map.cpp.o
  /home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
  /home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
  /home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp
+CMakeFiles/RTSGame.dir/Source/Sprite.cpp.o
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
+ /home/jonathan/ProyectoPOO/RTSGame/Source/Sprite.cpp
 CMakeFiles/RTSGame.dir/Source/Unidad.cpp.o
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
  /home/jonathan/ProyectoPOO/RTSGame/Source/Unidad.cpp
 CMakeFiles/RTSGame.dir/Source/main.cpp.o
@@ -29,6 +42,7 @@ CMakeFiles/RTSGame.dir/Source/main.cpp.o
  /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Map.h
+ /home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
  /home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h
  /home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
  /home/jonathan/ProyectoPOO/RTSGame/Source/main.cpp

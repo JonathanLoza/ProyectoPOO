@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Unidad.h"
+#include "Controlador.h"
 #include "Choza.h"
 #include <iostream>
 class Map{
@@ -11,7 +12,7 @@ public:
     Map();
     sf::Texture mTexture;
     sf::Sprite mMap;
-    Cachimbo c;
+    Controller controlador;
     Profesor p;
     Cubiculo choza;
 public:

@@ -8,7 +8,7 @@ static int cachimbo_vida=10;
 static int cachimbo_atk=5;
 static int cachimbo_def=3;
 static int  cachimbo_rango=2;
-static int  cachimbo_velocidad=200;
+static float  cachimbo_velocidad=100;
 
 //Datos del mentor
 static int  mentor_vida=2;
