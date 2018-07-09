@@ -21,9 +21,12 @@ class projectile : public  Sprite
 public:
     int counter;
     int movementSpeed = 10;
-    int attackDamage = 5;
     int direction= 0 ;
+    int attackDamage ;
+    int lifeTime ;
     projectile();
     void update();
+    bool destroy = false;
+    int counterLifetime = 0;
 };
 #endif //RTSGAME_SPRITE_H

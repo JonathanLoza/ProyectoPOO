@@ -5,10 +5,10 @@
 #include "../Include/Sprite.h"
 projectile::projectile()
 {
-    rect.setSize(sf::Vector2f(3, 3));
+    rect.setSize(sf::Vector2f(4, 4));
     rect.setPosition(400, 200);
     efe.setPosition(400, 200);
-    efe.setRadius(15);
+    efe.setRadius(10);
 
 }
 void projectile::update()
@@ -32,5 +32,10 @@ void projectile::update()
     {
         rect.move(movementSpeed,0);
         efe.move(movementSpeed,0);
+    }
+    counterLifetime++;
+    if (counterLifetime >= lifeTime)
+    {
+        destroy = true;
     }
 }

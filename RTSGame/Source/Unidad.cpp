@@ -127,7 +127,7 @@ void Aliadas::moverMouse(sf::Time deltaTime, sf::Vector2f mousePos) {
             sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 32, 32 * 2, 32, 32));
 
         }
-        sprite.sprite.move((ale - posi)*deltaTime.asSeconds()*0.4f);
+        sprite.sprite.move((ale - posi)*deltaTime.asSeconds());
         sprite.counterWalking++;
 
         if (sprite.counterWalking == 2)
@@ -135,9 +135,21 @@ void Aliadas::moverMouse(sf::Time deltaTime, sf::Vector2f mousePos) {
             sprite.counterWalking = 0;
         }
     }
+    sprite.rect.setPosition(sprite.sprite.getPosition());
 }
 
 void Aliadas::updateprojectile(sf::RenderWindow *window) {
+    projectile1.counter = 0;
+    for (iter = projectileArray.begin(); iter != projectileArray.end(); iter++)
+    {
+        if (projectileArray[projectile1.counter].destroy == true)
+        {
+            projectileArray.erase(iter);
+            break;
+        }
+
+        projectile1.counter++;
+    }
     projectile1.counter = 0;
 
     for (iter = projectileArray.begin(); iter != projectileArray.end(); iter++)
@@ -163,6 +175,17 @@ void Enemigos::atacar() {
 }
 
 void Enemigos::updateprojectile(sf::RenderWindow *window) {
+    projectile1.counter = 0;
+    for (iter = projectileAr.begin(); iter != projectileAr.end(); iter++)
+    {
+        if (projectileAr[projectile1.counter].destroy == true)
+        {
+            projectileAr.erase(iter);
+            break;
+        }
+
+        projectile1.counter++;
+    }
     projectile1.counter = 0;
     for (iter = projectileAr.begin(); iter != projectileAr.end(); iter++)
     {
@@ -203,9 +226,11 @@ void Enemigos::moverene(sf::Time deltaTime) {
     sprite.sprite.move(movementP * deltaTime.asSeconds());
     sprite.counterWalking++;
 
+
     if (sprite.counterWalking == 3)
     {
         sprite.counterWalking = 0;
     }
+    sprite.rect.setPosition(sprite.sprite.getPosition());
 }
 

@@ -65,7 +65,7 @@ iostream
 /home/jonathan/ProyectoPOO/RTSGame/Source/Controlador.cpp
 ../Include/Controlador.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
-list
+stdlib.h
 -
 ../Include/Game.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h

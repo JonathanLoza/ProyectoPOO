@@ -13,7 +13,7 @@ public:
     bool mIsMovingDown;
     bool mIsMovingRight;
     bool mIsMovingLeft;
-    const float Speed = 200.f;
+    const float Speed = 400.f;
 public:
     Estructura(int vida):vida(vida),mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false){}
     virtual ~Estructura(){}
@@ -45,7 +45,7 @@ public:
     Cubiculo(int vida):Estructura(vida){
         mTexture.loadFromFile("../Media/Choza.png");
         mChoza.setTexture(mTexture);
-        mChoza.setPosition(200.f, 200.f);
+        mChoza.setPosition(80.f, 60.f);
         mChoza.setScale(3,3);
     }
     void update_vida_cachimbo(int x);

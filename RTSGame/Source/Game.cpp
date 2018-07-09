@@ -34,83 +34,79 @@ void Game::handleMouseInput( bool isPressed) {
 void Game::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
 {
     if (key == sf::Keyboard::W ){
-        map.p.sprite.direccion=1;
-        map.p.mIsMovingUp = isPressed;
-        map.p.Up = isPressed;
+        //map.p.sprite.direccion=1;
+        //map.p.mIsMovingUp = isPressed;
+        map.controlador.booleneUp(isPressed);
+        //map.p.Up = isPressed;
 
     }
     else if (key == sf::Keyboard::S ){
-        map.p.mIsMovingDown = isPressed;
-        map.p.Down = isPressed;
-        map.p.sprite.direccion=2;
+        //map.p.mIsMovingDown = isPressed;
+        map.controlador.booleneDown(isPressed);
+        //map.p.Down = isPressed;
+        //map.p.sprite.direccion=2;
     }
     else if (key == sf::Keyboard::A ){
-        map.p.mIsMovingLeft = isPressed;
-        map.p.Left = isPressed;
-        map.p.sprite.direccion=3;
+        //map.p.mIsMovingLeft = isPressed;
+        map.controlador.booleneLeft(isPressed);
+        //map.p.Left = isPressed;
+        //map.p.sprite.direccion=3;
     }
     else if (key == sf::Keyboard::D ){
-        map.p.mIsMovingRight = isPressed;
-        map.p.Right = isPressed;
-        map.p.sprite.direccion=4;
+        map.controlador.booleneRight(isPressed);
+        //map.p.mIsMovingRight = isPressed;
+       // map.p.Right = isPressed;
+        //map.p.sprite.direccion=4;
     }
     if (key == sf::Keyboard:: Down ){
         map.mIsMovingDown = isPressed;
-        map.p.mIsMovingUp = isPressed;
+        //map.p.mIsMovingUp = isPressed;
         map.controlador.boolUp(isPressed);
-        map.p.mIsMovingUp = isPressed;
         map.choza.mIsMovingUp= isPressed;
     }
     else if (key == sf::Keyboard::Left){
         map.mIsMovingLeft = isPressed;
-        map.p.mIsMovingRight = isPressed;
+        //map.p.mIsMovingRight = isPressed;
         map.controlador.boolRight(isPressed);
-        map.p.mIsMovingRight = isPressed;
         map.choza.mIsMovingRight= isPressed;
     }
     else if (key == sf::Keyboard::Right ){
         map.mIsMovingRight = isPressed;
-        map.p.mIsMovingLeft = isPressed;
+        //map.p.mIsMovingLeft = isPressed;
         map.controlador.boolLeft(isPressed);
-        map.p.mIsMovingLeft = isPressed;
         map.choza.mIsMovingLeft= isPressed;
     }
     else if (key == sf::Keyboard::Up ){
         map.mIsMovingUp = isPressed;
-        map.p.mIsMovingDown = isPressed;
+        //map.p.mIsMovingDown = isPressed;
         map.controlador.boolDown(isPressed);
-        map.p.mIsMovingDown = isPressed;
         map.choza.mIsMovingDown= isPressed;
     }
 
     if (map.altura <= 0) { // con el techo 0
         map.mIsMovingUp=false;
-        map.p.mIsMovingDown = false;
+        //map.p.mIsMovingDown = false;
         map.controlador.boolDown(false);
-        map.p.mIsMovingDown = false;
         map.choza.mIsMovingDown= false;
 
     }
     if (map.altura >= 80600){ // con el suelo 80600
         map.mIsMovingDown = false;
-        map.p.mIsMovingUp = false;
+        //map.p.mIsMovingUp = false;
         map.controlador.boolUp(false);
-        map.p.mIsMovingUp = false;
         map.choza.mIsMovingUp= false;
 
     }
     if (map.ancho <= 0){ // con la izquierda 0
         map.mIsMovingLeft = false;
-        map.p.mIsMovingRight = false;
+        //map.p.mIsMovingRight = false;
         map.controlador.boolRight(false);
-        map.p.mIsMovingRight =false;
         map.choza.mIsMovingRight= false;
     }
     if (map.ancho >= 88600){ // con la derecha 88600
         map.mIsMovingRight = false;
-        map.p.mIsMovingLeft = false;
+        //map.p.mIsMovingLeft = false;
         map.controlador.boolLeft(false);
-        map.p.mIsMovingLeft =false;
         map.choza.mIsMovingLeft= false;
     }
 }
@@ -124,7 +120,7 @@ void Game::processEvents() {
                     map.controlador.atk_all();
                 }
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::E)){
-                    map.p.atacar();
+                    map.controlador.eneatk();
                 }
                 handlePlayerInput(event.key.code, true);
                 break;
@@ -151,12 +147,14 @@ void Game::processEvents() {
 
 void Game::update(sf::Time deltaTime)
 {
-
+    //map.controlador.detectar();
+    map.controlador.checkcolisiones();
     map.controlador.mouse_all(TimePerFrame,mousePos);
     map.controlador.move_all();
+    map.controlador.enemove();
     map.mover(deltaTime);
-    map.p.moverene(deltaTime);
-    map.p.mover(deltaTime);
+    //map.p.moverene(deltaTime);
+    //map.p.mover(deltaTime);
     map.choza.mover(deltaTime);
 
 }
@@ -164,10 +162,10 @@ void Game::render() {
     mWindow.clear();
     mWindow.draw(map.mMap);
     mWindow.draw(map.choza.mChoza);
-    mWindow.draw(map.p.sprite.sprite);
+    //mWindow.draw(map.p.sprite.sprite);
     map.controlador.draw_all(&mWindow);
     map.controlador.projdraw(&mWindow);
-    map.p.updateprojectile(&mWindow);
+    //map.p.updateprojectile(&mWindow);
     mWindow.display();
 }
 

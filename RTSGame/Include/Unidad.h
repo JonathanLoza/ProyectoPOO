@@ -13,23 +13,26 @@ static auto seed = std::random_device{}();
 static auto gen = std::mt19937{ seed };
 static auto dist = std::uniform_real_distribution<>{200, 500};
 static auto dist2 = std::uniform_real_distribution<>{-700, 700};
+static auto dist3 = std::uniform_real_distribution<>{0, 2300};
+static auto dist4 = std::uniform_real_distribution<>{600, 2000};
 
 class Unidad{
 protected:
-    int vida;
     int atk;
     int def;
     int rango;
-    float velocidadmapa=200;
+    float velocidadmapa=400;
     float velocidad;
 public:
     Unidad(int vida, int atk, int rango, int def, float velocidad): vida(vida), atk(atk), def(def),rango(rango),velocidad(velocidad), mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false), movingmouse(false),Up(false),Down(false),Left(false),Right(false){
     }
+    int vida;
     virtual ~Unidad(){}
     int get_vida();
     int get_atk();
     int get_def();
     int get_rango();
+    bool alive = true;
     bool mIsMovingUp;
     bool mIsMovingDown;
     bool mIsMovingRight;
@@ -72,6 +75,8 @@ public:
         sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
         projectile1.rect.setFillColor(sf::Color::White);
         projectile1.rect.setSize(sf::Vector2f(4, 4));
+        projectile1.lifeTime=rango;
+        projectile1.attackDamage=atk;
     }
 };
 
@@ -84,6 +89,8 @@ public:
         sprite.sprite.setPosition(dist(gen), dist(gen));
         sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
         projectile1.rect.setFillColor(sf::Color::Cyan);
+        projectile1.lifeTime=rango;
+        projectile1.attackDamage=atk;
 
     }
 };
@@ -97,6 +104,8 @@ public:
         sprite.sprite.setPosition(dist(gen), dist(gen));
         sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
         projectile1.rect.setFillColor(sf::Color::Red);
+        projectile1.lifeTime=rango;
+        projectile1.attackDamage=atk;
 
     }
 };
@@ -117,10 +126,11 @@ public:
         mTexture.loadFromFile("../Media/profesorsprite.png");
         sprite.sprite.setTexture(mTexture);
         sprite.rect.setSize(sf::Vector2f(32, 32));
-        sprite.sprite.setPosition(dist(gen), dist(gen));
+        sprite.sprite.setPosition(dist3(gen), dist4(gen));
         sprite.sprite.setTextureRect(sf::IntRect(0,0,64,64));
         projectile1.rect.setFillColor(sf::Color::Cyan);
         projectile1.efe.setFillColor(sf::Color::White);
+        projectile1.attackDamage=atk;
     }
 };
 

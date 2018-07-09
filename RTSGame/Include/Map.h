@@ -9,13 +9,12 @@
 #include <vector>
 
 class Map{
-    const float Speed = 200.f;
+    const float Speed = 400.f;
 public:
     Map();
     sf::Texture mTexture;
     sf::Sprite mMap;
     Controller controlador;
-    Profesor p;
     Cubiculo choza;
 public:
     bool mIsMovingUp;
