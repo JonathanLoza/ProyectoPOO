@@ -11,6 +11,7 @@ projectile::projectile()
     efe.setRadius(10);
 
 }
+//Update del Sprite
 void projectile::update()
 {
     if(direction==1)

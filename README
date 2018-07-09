@@ -1,7 +1,52 @@
-Proyecto de POO
+//Proyecto de POO
 
 Integrantes:
 
 -Jonathan Loza
 -Anderson Martinez
 -Gonzalo Muñoz
+
+Propósito:
+
+Crear un juego RTS con caracterizado en modalidad de la vida de un estudiante con el proposito de sobrevivir a la univesidad y a los despiadados planes de los profesores y sus secuaces TA; con la ayuda los mentores y cachimbos que te ayudaran a a lo largo de esta emocionante aventura.
+
+Implementacion del código: 
+   > Se usaron :
+	-Clases
+	   ~Game
+	   ~Map
+	   ~Controlador
+	   ~Unidad
+	   ~Aliadas
+	   ~Enemigos
+	   ~Mentor
+	   ~Cachimbo
+	   ~Prota
+	   ~Profesor
+	   ~TA
+	   ~Sprite
+	   ~Proyectil
+	-Objetos
+	   *Creación de las clases
+	-Herencia:
+	   Clases padre:
+		¬Unidad
+		¬Sprite
+	   Clases hijas:
+	   ~Aliadas
+	   ~Enemigos
+	   ~Mentor
+	   ~Cachimbo
+	   ~Prota
+	   ~Profesor
+	   ~TA
+	   ~Proyectil		
+	-Polimorfismos
+	   ~Controlador
+	   ~Map
+	-STL
+	   ~Vectores
+	   ~Iteradores
+	-SFML
+	   ~Graphics
+	   ~Audio

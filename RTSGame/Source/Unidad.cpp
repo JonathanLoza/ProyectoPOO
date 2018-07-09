@@ -16,7 +16,7 @@ int Unidad::get_rango() {
     return rango;
 }
 
-
+//Mover Unidad por teclas para que el mapa no lo arrastre
 void Unidad::mover(sf::Time deltaTime) {
     sf::Vector2f movementP(0.f, 0.f);
     if (mIsMovingUp)
@@ -30,11 +30,11 @@ void Unidad::mover(sf::Time deltaTime) {
     sprite.sprite.move(movementP * deltaTime.asSeconds());
 
 }
-
+//Dibujar texturasy sprites
 void Unidad::draw(sf::RenderWindow *window) {
     window->draw(sprite.sprite);
 }
-
+//COndiciones para cambiar los booleanos segun el mouse
 void Unidad::handleMouseInput( bool isPressed,sf::Vector2f mousePos){
     sf::FloatRect mouse(mousePos,{70,70});
     sf::Vector2i alemouse=sf::Vector2i(mousePos);
@@ -94,7 +94,7 @@ void Unidad::handleMouseInput( bool isPressed,sf::Vector2f mousePos){
         Down=false;
     }
 }
-
+//Movimiento por mouse de aliadas
 void Aliadas::moverMouse(sf::Time deltaTime, sf::Vector2f mousePos) {
 
     sf::FloatRect mouse(mousePos,{40,40});
@@ -137,7 +137,7 @@ void Aliadas::moverMouse(sf::Time deltaTime, sf::Vector2f mousePos) {
     }
     sprite.temp.setPosition(sprite.sprite.getPosition());
 }
-
+//Borrado y dibujo de proyectiles de aliadas
 void Aliadas::updateprojectile(sf::RenderWindow *window) {
     projectile1.counter = 0;
     for (iter = projectileArray.begin(); iter != projectileArray.end(); iter++)
@@ -160,20 +160,21 @@ void Aliadas::updateprojectile(sf::RenderWindow *window) {
 
     }
 }
+//Aliadas atacar
 void Aliadas::atacar() {
     projectile1.rect.setPosition(sprite.sprite.getPosition().x+sprite.sprite.getGlobalBounds().width/2-projectile1.rect.getSize().x/2,
                                  sprite.sprite.getPosition().y+sprite.sprite.getGlobalBounds().height/2-projectile1.rect.getSize().y/2);
     projectile1.direction = sprite.direccion;
     projectileArray.push_back(projectile1);
 }
-
+//ENemigos atacar
 void Enemigos::atacar() {
     projectile1.efe.setPosition(sprite.sprite.getPosition().x+sprite.sprite.getGlobalBounds().width/2-projectile1.efe.getRadius(),
                                 sprite.sprite.getPosition().y+sprite.sprite.getGlobalBounds().height/2-projectile1.efe.getRadius());
     projectile1.direction = sprite.direccion;
     projectileAr.push_back(projectile1);
 }
-
+//Borrado y dibujado de proyectiles enemigos
 void Enemigos::updateprojectile(sf::RenderWindow *window) {
     projectile1.counter = 0;
     for (iter = projectileAr.begin(); iter != projectileAr.end(); iter++)
@@ -195,7 +196,7 @@ void Enemigos::updateprojectile(sf::RenderWindow *window) {
 
     }
 }
-
+//MOver enemigos por teclas
 void Enemigos::moverene(sf::Time deltaTime) {
     sf::Vector2f movementP(0.f, 0.f);
     if (Up)
@@ -233,9 +234,10 @@ void Enemigos::moverene(sf::Time deltaTime) {
     }
     sprite.temp.setPosition(sprite.sprite.getPosition());
 }
-
+//Movimiento random de enemigos
 void Enemigos::moverrandom() {
     atkrandom=false;
+    sf::Vector2f posicion=sprite.sprite.getPosition();
     if (sprite.direccion == 1) // Up
     {
         sprite.sprite.move(0,-velocidad);
@@ -260,7 +262,22 @@ void Enemigos::moverrandom() {
     {
         // No movement
     }
+    /*if (posicion.y + sprite.sprite.getGlobalBounds().height>= 80600) { // con el suelo
+        velocity.y *= -1;
 
+    }
+    else if (posicion.y <= 0) { // con el techo
+        velocity.y *= -1;
+
+    }
+    if (posicion.x + sprite.sprite.getGlobalBounds().width >= 88000) { // con el lado derecho
+        velocity.x *= -1;
+
+    }
+    else if(posicion.x <= 0) { // con el lado izquierdo
+        velocity.x *= -1;
+    }
+    sprite.sprite.move(velocity.x, velocity.y);*/
     sprite.counterWalking++;
     if (sprite.counterWalking == 3)
     {

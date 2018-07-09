@@ -53,7 +53,7 @@ public:
 
 };
 
-class Aliadas: public Unidad{
+        class Aliadas: public Unidad{
 public:
     vector<projectile>::const_iterator iter;
     vector<projectile> projectileArray;
@@ -118,6 +118,7 @@ public:
     int counter = 0;
     int movementLength = 100;
     bool atkrandom=false;
+    sf::Vector2f velocity;
     Enemigos(int vida, int atk, int def, int rango, float velocidad):Unidad(vida,atk,def,rango,velocidad){
         sprite.temp.setSize(sf::Vector2f(64, 64));
     }
@@ -137,7 +138,10 @@ public:
         sprite.sprite.setTextureRect(sf::IntRect(0,0,64,64));
         projectile1.rect.setFillColor(sf::Color::Cyan);
         projectile1.efe.setFillColor(sf::Color::White);
+        projectile1.lifeTime=rango;
         projectile1.attackDamage=atk;
+        this->velocity.x = 10;
+        this->velocity.y = 10;
     }
 };
 

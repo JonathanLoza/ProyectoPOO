@@ -59,6 +59,8 @@ Sprite.h
 /home/jonathan/ProyectoPOO/RTSGame/Source/Choza.cpp
 ../Include/Choza.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
+Datos.cpp
+/home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp
 iostream
 -
 
@@ -66,6 +68,8 @@ iostream
 ../Include/Controlador.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Controlador.h
 stdlib.h
+-
+unistd.h
 -
 ../Include/Game.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
@@ -75,6 +79,8 @@ stdlib.h
 /home/jonathan/ProyectoPOO/RTSGame/Source/Game.cpp
 ../Include/Game.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Game.h
+unistd.h
+/home/jonathan/ProyectoPOO/RTSGame/Source/unistd.h
 
 /home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp
 ../Include/Map.h

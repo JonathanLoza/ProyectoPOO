@@ -26,8 +26,11 @@
       <file leaf-file-name="Game.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-222">
-              <caret line="119" column="46" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
+            <state relative-caret-position="-415">
+              <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,22 +38,10 @@
       <file leaf-file-name="Unidad.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Include/Unidad.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+            <state relative-caret-position="-865">
+              <caret line="55" column="37" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="37" />
               <folding>
                 <element signature="e#60#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Map.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Map.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-235">
-              <caret line="11" column="101" selection-start-line="11" selection-start-column="101" selection-end-line="11" selection-end-column="101" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,26 +50,8 @@
       <file leaf-file-name="Datos.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Datos.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sprite.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/Sprite.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sprite.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Include/Sprite.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="344">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -86,8 +59,8 @@
       <file leaf-file-name="Controlador.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/Controlador.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="199" column="5" lean-forward="true" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
+            <state relative-caret-position="630">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -98,10 +71,22 @@
       <file leaf-file-name="Controlador.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Include/Controlador.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="645">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="e#61#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Map.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Map.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +95,29 @@
       <file leaf-file-name="Unidad.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source/Unidad.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="234" column="1" selection-start-line="234" selection-start-column="1" selection-end-line="234" selection-end-column="1" />
+            <state relative-caret-position="-1500">
+              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Choza.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Include/Choza.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Choza.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/Choza.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,17 +134,18 @@
         <option value="$PROJECT_DIR$/Sprite.h" />
         <option value="$PROJECT_DIR$/Source/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Include/Map.h" />
-        <option value="$PROJECT_DIR$/Include/Choza.h" />
-        <option value="$PROJECT_DIR$/Include/Controlador.h" />
-        <option value="$PROJECT_DIR$/Source/Datos.cpp" />
-        <option value="$PROJECT_DIR$/Source/Map.cpp" />
-        <option value="$PROJECT_DIR$/Source/Game.cpp" />
         <option value="$PROJECT_DIR$/Include/Sprite.h" />
         <option value="$PROJECT_DIR$/Source/Sprite.cpp" />
-        <option value="$PROJECT_DIR$/Include/Unidad.h" />
         <option value="$PROJECT_DIR$/Source/Unidad.cpp" />
+        <option value="$PROJECT_DIR$/Include/Controlador.h" />
+        <option value="$PROJECT_DIR$/Include/Map.h" />
+        <option value="$PROJECT_DIR$/Source/Choza.cpp" />
+        <option value="$PROJECT_DIR$/Include/Choza.h" />
+        <option value="$PROJECT_DIR$/Source/Map.cpp" />
         <option value="$PROJECT_DIR$/Source/Controlador.cpp" />
+        <option value="$PROJECT_DIR$/Source/Game.cpp" />
+        <option value="$PROJECT_DIR$/Source/Datos.cpp" />
+        <option value="$PROJECT_DIR$/Include/Unidad.h" />
       </list>
     </option>
   </component>
@@ -161,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,6 +194,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,14 +204,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Source" />
+      <recent name="$PROJECT_DIR$/Include" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Media" />
       <recent name="$PROJECT_DIR$/Include" />
       <recent name="$PROJECT_DIR$/Source" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Source" />
-      <recent name="$PROJECT_DIR$/Include" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -242,27 +249,28 @@
       <workItem from="1529262120587" duration="8785000" />
       <workItem from="1531069921057" duration="28769000" />
       <workItem from="1531116873803" duration="20766000" />
+      <workItem from="1531144919454" duration="8351000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59392000" />
+    <option name="totallyTimeSpent" value="67743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24963397" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49707174" weight="0.60223645" />
-      <window_info anchor="bottom" id="CMake" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5036603" side_tool="true" weight="0.7220447" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49707174" weight="0.43290734" />
+      <window_info anchor="bottom" id="CMake" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5036603" side_tool="true" weight="0.7220447" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49633968" weight="0.35782748" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.399361" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399361" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -271,26 +279,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290735" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.60223645" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3290735" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="CMake" order="11" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -304,13 +292,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2370">
-          <caret line="158" column="27" selection-start-line="158" selection-start-column="27" selection-end-line="158" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/7/ext/new_allocator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2025">
@@ -480,28 +461,8 @@
     <entry file="file://$PROJECT_DIR$/Source/AnimatedSprite.cpp" />
     <entry file="file://$PROJECT_DIR$/Source/Animation.cpp" />
     <entry file="file://$PROJECT_DIR$/Include/AnimatedSprite.h" />
-    <entry file="file://$PROJECT_DIR$/Include/Game.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#25#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Media/profe.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -522,58 +483,10 @@
     <entry file="file://$PROJECT_DIR$/Media/profesorsprite.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Include/Map.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#45#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Include/Choza.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/7/ext/new_allocator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="135" column="6" selection-start-line="135" selection-start-column="6" selection-end-line="135" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Map.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="11" column="101" selection-start-line="11" selection-start-column="101" selection-end-line="11" selection-end-column="101" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
-          <caret line="119" column="46" selection-start-line="119" selection-start-column="46" selection-end-line="119" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source/Datos.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Include/Sprite.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -584,37 +497,115 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Source/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Include/Game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#25#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Include/Map.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#45#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Choza.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Include/Sprite.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Datos.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Include/Controlador.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="645">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="e#61#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Include/Unidad.h">
+    <entry file="file://$PROJECT_DIR$/Include/Choza.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-415">
+          <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
           <folding>
-            <element signature="e#60#88#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Unidad.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="234" column="1" selection-start-line="234" selection-start-column="1" selection-end-line="234" selection-end-column="1" />
+        <state relative-caret-position="-1500">
+          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Include/Unidad.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-865">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="37" />
+          <folding>
+            <element signature="e#60#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/Controlador.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="199" column="5" lean-forward="true" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

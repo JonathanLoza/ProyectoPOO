@@ -1,8 +1,10 @@
 #include "../Include/Controlador.h"
 #include <stdlib.h>
+#include <unistd.h>
 #include "../Include/Game.h"
 using  namespace std;
 
+//Agregar unidades al vecor unidades
 void Controller::incluir(Aliadas* unidad) {
 
     if (dynamic_cast<Cachimbo*>(unidad) != nullptr) {
@@ -16,6 +18,7 @@ void Controller::incluir(Aliadas* unidad) {
     }
 }
 
+//Mover por teclas de mapa
 void Controller::move_all() {
     for(auto unidad:unidades){
         unidad->mover(TimePerFrame);
@@ -24,23 +27,29 @@ void Controller::move_all() {
         unidad->mover(TimePerFrame);
     }
 }
+//Mover por mouse
 void Controller::mouse_all(sf::Time deltaTime, sf::Vector2f mousePos) {
     for(auto unidad:unidades){
         unidad->moverMouse(TimePerFrame,mousePos);
     }
 }
+//Mover enemigos por mouse
 void Controller::enemove() {
     for(auto unidad:enemigos){
         unidad->moverene(TimePerFrame);
     }
 }
+//Atk Unidades
 void Controller::atk_all() {
+
     for(auto unidad:unidades){
         unidad->atacar();
+
     }
+
 }
 
-
+//Bool mIsMovingUp
 void Controller::boolUp(bool isPressed) {
     for(auto unidad:unidades){
         unidad->mIsMovingUp=isPressed;
@@ -49,7 +58,7 @@ void Controller::boolUp(bool isPressed) {
         unidad->mIsMovingUp=isPressed;
     }
 }
-
+//Bool mIsMovingDown
 void Controller::boolDown(bool isPressed) {
     for(auto unidad:unidades){
         unidad->mIsMovingDown=isPressed;
@@ -59,6 +68,7 @@ void Controller::boolDown(bool isPressed) {
     }
 }
 
+//Bool mIsMovingRight
 void Controller::boolRight(bool isPressed) {
     for(auto unidad:unidades){
         unidad->mIsMovingRight=isPressed;
@@ -67,13 +77,13 @@ void Controller::boolRight(bool isPressed) {
         unidad->mIsMovingRight=isPressed;
     }
 }
-
+//Bool Mouse
 void Controller::boolmouse(bool isPressed) {
     for(auto unidad:unidades){
         unidad->movingmouse=isPressed;
     }
 }
-
+//Bool mIsMovingLeft
 void Controller::boolLeft(bool isPressed) {
     for(auto unidad:unidades){
         unidad->mIsMovingLeft=isPressed;
@@ -91,7 +101,7 @@ void Controller::draw_all(sf::RenderWindow *window) {
         unidad->draw(window);
     }
 }
-
+//Llamar a projectiles
 void Controller::projdraw(sf::RenderWindow *window) {
     for(auto unidad:unidades){
         unidad->updateprojectile(window);
@@ -100,7 +110,7 @@ void Controller::projdraw(sf::RenderWindow *window) {
         unidad->updateprojectile(window);
     }
 }
-
+//Incluir enemigos al vector enemigos
 void Controller::incluirenemigos(Enemigos* unidad) {
     if (dynamic_cast<Profesor*>(unidad) != nullptr) {
         enemigos.emplace_back(unidad);
@@ -109,37 +119,37 @@ void Controller::incluirenemigos(Enemigos* unidad) {
         enemigos.emplace_back(unidad);
     }
 }
-
+//Bool enemigosUp
 void Controller::booleneUp(bool isPressed) {
     for(auto unidad:enemigos){
         unidad->Up=isPressed;
     }
 }
-
+//Bool enemigosDown
 void Controller::booleneDown(bool isPressed) {
     for(auto unidad:enemigos){
         unidad->Down=isPressed;
     }
 }
-
+//Bool enemigosRight
 void Controller::booleneRight(bool isPressed) {
     for(auto unidad:enemigos){
         unidad->Right=isPressed;
     }
 }
-
+//Bool enemigosLeft
 void Controller::booleneLeft(bool isPressed) {
     for(auto unidad:enemigos){
         unidad->Left=isPressed;
     }
 }
-
+//Enemigos atacar
 void Controller::eneatk() {
     for(auto unidad:enemigos){
         unidad->atacar();
     }
 }
-
+//Detectar unidad cerca (aun en desarrollo, genera error)
 void Controller::detectar() {
     this->counter1 = 0;
     this->counter2=0;
@@ -169,7 +179,7 @@ void Controller::detectar() {
     }
 
 }
-
+//Colisiones entre profesor y los projectiles
 void Controller::checkcolisiones() {
     this->counter1=0;
     this->counter2=0;
@@ -218,7 +228,7 @@ void Controller::checkcolisiones() {
         counter1++;
     }*/
 }
-
+//Checkear las muertes
 void Controller::checkdeads() {
     this->counter1 = 0;
     this->counter2=0;
@@ -245,18 +255,19 @@ void Controller::checkdeads() {
 
 
 }
-
+//Mover random
 void Controller::randomenem() {
     for(auto unidad:enemigos){
         unidad->moverrandom();
     }
 }
-
+//Bool Random
 void Controller::boolrandom(bool isPressed) {
     for(auto unidad:enemigos){
         unidad->atkrandom=isPressed;
     }
 }
+
 
 
 

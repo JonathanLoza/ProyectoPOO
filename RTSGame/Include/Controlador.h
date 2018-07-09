@@ -41,6 +41,7 @@ public:
     void eneatk();
     void checkcolisiones();
     void checkdeads();
+
 };
 
 #endif //RTSGAME_CONTROLADOR_H

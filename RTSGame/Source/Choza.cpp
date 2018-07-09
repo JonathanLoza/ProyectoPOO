@@ -1,4 +1,5 @@
 #include "../Include/Choza.h"
+#include "Datos.cpp"
 #include <iostream>
 using namespace std;
 
@@ -60,7 +61,7 @@ void Cubiculo::update_mentor(int x){
     update_velocidad_mentor(x);
     update_vida_mentor(x);
 }
-
+//Mover por teclas
 void Cubiculo::mover(sf::Time deltaTime) {
     sf::Vector2f movementChoza(0.f, 0.f);
 
@@ -74,5 +75,21 @@ void Cubiculo::mover(sf::Time deltaTime) {
         movementChoza.x += Speed;
     mChoza.move(movementChoza * deltaTime.asSeconds());
 }
+
+//Mover por teclas
+void Pre::mover(sf::Time deltaTime) {
+    sf::Vector2f movementChoza(0.f, 0.f);
+
+    if (mIsMovingUp)
+        movementChoza.y -= Speed;
+    if (mIsMovingDown)
+        movementChoza.y += Speed;
+    if (mIsMovingLeft)
+        movementChoza.x -= Speed;
+    if (mIsMovingRight)
+        movementChoza.x += Speed;
+    mChoza.move(movementChoza * deltaTime.asSeconds());
+}
+
 
 

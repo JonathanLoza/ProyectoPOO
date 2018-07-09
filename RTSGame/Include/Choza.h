@@ -21,11 +21,16 @@ public:
 };
 
 class Pre:public Estructura{
-    int preciochachimbo;
-    int preciomentor;
+    int preciochachimbo=0;
+    int preciomentor=0;
 public:
-    Pre(int vida, int preciocachimbo, int preciomentor): Estructura(vida),preciochachimbo(preciocachimbo),preciomentor(preciomentor){}
-    void crear();
+    Pre(int vida): Estructura(vida){
+        mTexture.loadFromFile("../Media/barracks.png");
+        mChoza.setTexture(mTexture);
+        mChoza.setPosition(120.f,20.f);
+        mChoza.setScale(0.5,0.5);
+    }
+    void mover(sf::Time deltaTime) override ;
 };
 
 class Cubiculo:public Estructura{
@@ -45,7 +50,7 @@ public:
     Cubiculo(int vida):Estructura(vida){
         mTexture.loadFromFile("../Media/Choza.png");
         mChoza.setTexture(mTexture);
-        mChoza.setPosition(80.f, 60.f);
+        mChoza.setPosition(20.f, 160.f);
         mChoza.setScale(3,3);
     }
     void update_vida_cachimbo(int x);

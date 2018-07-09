@@ -16,6 +16,7 @@ public:
     sf::Sprite mMap;
     Controller controlador;
     Cubiculo choza;
+    Pre pre;
 public:
     bool mIsMovingUp;
     bool mIsMovingDown;
@@ -25,6 +26,7 @@ public:
     float ancho=0;
 public:
     void mover(sf::Time deltaTime);
+    void crear(sf::Vector2f mousePos);
 };
 
 

@@ -27,8 +27,8 @@ static int  mentor_velocidad=14;
 static int  profesor_vida=10;
 static int  profesor_atk=5;
 static int  profesor_def=7;
-static int  profesor_rango=27;
-static int  profesor_velocidad=10;
+static int  profesor_rango=10;
+static int  profesor_velocidad=5;
 
 //Datos del TA
 static int  TA_vida=12;

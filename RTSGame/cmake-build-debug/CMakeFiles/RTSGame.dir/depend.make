@@ -5,6 +5,7 @@ CMakeFiles/RTSGame.dir/Source/Choza.cpp.o: ../Include/Choza.h
 CMakeFiles/RTSGame.dir/Source/Choza.cpp.o: ../Include/Sprite.h
 CMakeFiles/RTSGame.dir/Source/Choza.cpp.o: ../Include/Unidad.h
 CMakeFiles/RTSGame.dir/Source/Choza.cpp.o: ../Source/Choza.cpp
+CMakeFiles/RTSGame.dir/Source/Choza.cpp.o: ../Source/Datos.cpp
 
 CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o: ../Include/Choza.h
 CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o: ../Include/Controlador.h
