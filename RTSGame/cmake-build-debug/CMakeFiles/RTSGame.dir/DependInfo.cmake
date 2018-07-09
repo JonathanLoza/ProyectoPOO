@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Choza.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Choza.cpp.o"
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Controlador.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o"
+  "/home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Datos.cpp.o"
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Game.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Game.cpp.o"
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Map.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Map.cpp.o"
   "/home/jonathan/ProyectoPOO/RTSGame/Source/Sprite.cpp" "/home/jonathan/ProyectoPOO/RTSGame/cmake-build-debug/CMakeFiles/RTSGame.dir/Source/Sprite.cpp.o"

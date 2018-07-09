@@ -13,7 +13,7 @@ elseif(UNIX AND NOT APPLE)
 endif()
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${SFML_ROOT}/cmake/Modules")
 
-set(SOURCE_FILES Source/main.cpp Source/Game.cpp Include/Game.h Include/Unidad.h Include/Controlador.h Include/Choza.h Source/Unidad.cpp Source/Controlador.cpp Include/Map.h Source/Choza.cpp Source/Map.cpp Source/Sprite.cpp)
+set(SOURCE_FILES Source/main.cpp Source/Game.cpp Include/Game.h Include/Unidad.h Include/Controlador.h Include/Choza.h Source/Unidad.cpp Source/Controlador.cpp Include/Map.h Source/Choza.cpp Source/Map.cpp Source/Sprite.cpp Source/Datos.cpp Include/Sprite.h)
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 
 if(WIN32)

@@ -10,9 +10,11 @@ using namespace std;
 
 class Controller{
     list <Aliadas*> unidades;
+    vector<Enemigos*> enemigos;
 public:
     ~Controller(){};
     void incluir(Aliadas* unidad);
+    void incluirenemigos(Enemigos* unidad);
     void move_all();
     void projdraw(sf::RenderWindow* window);
     void mouse_all(sf::Time deltaTime, sf::Vector2f mousePos);

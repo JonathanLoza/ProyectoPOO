@@ -1,14 +1,13 @@
 
-
 //Maximo unidades
-
+static int max=9;
 
 //Datos del cachimbo
 static int cachimbo_vida=10;
 static int cachimbo_atk=5;
 static int cachimbo_def=3;
 static int  cachimbo_rango=2;
-static float  cachimbo_velocidad=100;
+static float  cachimbo_velocidad=0.4f;
 
 //Datos del mentor
 static int  mentor_vida=2;
@@ -22,7 +21,7 @@ static int  profesor_vida=12;
 static int  profesor_atk=5;
 static int  profesor_def=7;
 static int  profesor_rango=27;
-static int  profesor_velocidad=2;
+static int  profesor_velocidad=200;
 
 //Datos del TA
 static int  TA_vida=12;

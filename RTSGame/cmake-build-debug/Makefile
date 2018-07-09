@@ -177,6 +177,33 @@ Source/Controlador.cpp.s:
 	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Controlador.cpp.s
 .PHONY : Source/Controlador.cpp.s
 
+Source/Datos.o: Source/Datos.cpp.o
+
+.PHONY : Source/Datos.o
+
+# target to build an object file
+Source/Datos.cpp.o:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.o
+.PHONY : Source/Datos.cpp.o
+
+Source/Datos.i: Source/Datos.cpp.i
+
+.PHONY : Source/Datos.i
+
+# target to preprocess a source file
+Source/Datos.cpp.i:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.i
+.PHONY : Source/Datos.cpp.i
+
+Source/Datos.s: Source/Datos.cpp.s
+
+.PHONY : Source/Datos.s
+
+# target to generate assembly for a file
+Source/Datos.cpp.s:
+	$(MAKE) -f CMakeFiles/RTSGame.dir/build.make CMakeFiles/RTSGame.dir/Source/Datos.cpp.s
+.PHONY : Source/Datos.cpp.s
+
 Source/Game.o: Source/Game.cpp.o
 
 .PHONY : Source/Game.o
@@ -327,6 +354,9 @@ help:
 	@echo "... Source/Controlador.o"
 	@echo "... Source/Controlador.i"
 	@echo "... Source/Controlador.s"
+	@echo "... Source/Datos.o"
+	@echo "... Source/Datos.i"
+	@echo "... Source/Datos.s"
 	@echo "... Source/Game.o"
 	@echo "... Source/Game.i"
 	@echo "... Source/Game.s"

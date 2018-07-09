@@ -6,6 +6,8 @@
 #include "Controlador.h"
 #include "Choza.h"
 #include <iostream>
+#include <vector>
+
 class Map{
     const float Speed = 200.f;
 public:

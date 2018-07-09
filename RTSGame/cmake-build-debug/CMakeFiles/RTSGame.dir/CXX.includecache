@@ -39,6 +39,8 @@ Choza.h
 /home/jonathan/ProyectoPOO/RTSGame/Include/Choza.h
 iostream
 -
+vector
+-
 
 /home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h
 SFML/Graphics.hpp

@@ -35,12 +35,6 @@ void Unidad::draw(sf::RenderWindow *window) {
     window->draw(sprite.sprite);
 }
 
-void Aliadas::atacar() {
-    projectile1.rect.setPosition(sprite.sprite.getPosition().x+sprite.sprite.getGlobalBounds().width/2-projectile1.rect.getSize().x/2,
-                                 sprite.sprite.getPosition().y+sprite.sprite.getGlobalBounds().height/2-projectile1.rect.getSize().y/2);
-    projectile1.direction = sprite.direccion;
-    projectileArray.push_back(projectile1);
-}
 void Unidad::handleMouseInput( bool isPressed,sf::Vector2f mousePos){
     sf::FloatRect mouse(mousePos,{70,70});
     sf::Vector2i alemouse=sf::Vector2i(mousePos);
@@ -111,8 +105,6 @@ void Aliadas::moverMouse(sf::Time deltaTime, sf::Vector2f mousePos) {
     sf::Vector2f posi=sprite.sprite.getPosition();
     if(movingmouse){
         handleMouseInput(true,mousePos);
-        float speed = 20.f;
-        sf::Vector2f movement(0.f, 0.f);
         if (Up)
         {   sprite.direccion=1;
             sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 32, 32 * 3, 32, 32));
@@ -143,8 +135,6 @@ void Aliadas::moverMouse(sf::Time deltaTime, sf::Vector2f mousePos) {
             sprite.counterWalking = 0;
         }
     }
-
-
 }
 
 void Aliadas::updateprojectile(sf::RenderWindow *window) {
@@ -158,8 +148,64 @@ void Aliadas::updateprojectile(sf::RenderWindow *window) {
 
     }
 }
+void Aliadas::atacar() {
+    projectile1.rect.setPosition(sprite.sprite.getPosition().x+sprite.sprite.getGlobalBounds().width/2-projectile1.rect.getSize().x/2,
+                                 sprite.sprite.getPosition().y+sprite.sprite.getGlobalBounds().height/2-projectile1.rect.getSize().y/2);
+    projectile1.direction = sprite.direccion;
+    projectileArray.push_back(projectile1);
+}
 
 void Enemigos::atacar() {
+    projectile1.efe.setPosition(sprite.sprite.getPosition().x+sprite.sprite.getGlobalBounds().width/2-projectile1.efe.getRadius(),
+                                 sprite.sprite.getPosition().y+sprite.sprite.getGlobalBounds().height/2-projectile1.efe.getRadius());
+    projectile1.direction = sprite.direccion;
+    projectileAr.push_back(projectile1);
+}
 
+void Enemigos::updateprojectile(sf::RenderWindow *window) {
+    projectile1.counter = 0;
+    for (iter = projectileAr.begin(); iter != projectileAr.end(); iter++)
+    {
+        projectileAr[projectile1.counter].update();
+        window->draw(projectileAr[projectile1.counter].efe);
+        projectile1.counter++;
+
+    }
+}
+
+void Enemigos::moverene(sf::Time deltaTime) {
+    sf::Vector2f movementP(0.f, 0.f);
+    if (Up)
+    {   sprite.direccion=1;
+        movementP.y -= velocidad;
+        sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 64, 64 * 3, 64, 64));
+    }
+    if (Down)
+    {
+        sprite.direccion=2;
+        movementP.y += velocidad;
+        sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 64, 0, 64, 64));
+
+    }
+    if(Left)
+    {
+        movementP.x -= velocidad;
+        sprite.direccion=3;
+        sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 64, 64* 1, 64, 64));
+
+    }
+    if (Right)
+    {
+        movementP.x += velocidad;
+        sprite.direccion=4;
+        sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 64, 64* 2, 64,64));
+    }
+    sprite.sprite.move(movementP * deltaTime.asSeconds());
+    sprite.counterWalking++;
+
+    if (sprite.counterWalking == 3)
+    {
+        sprite.counterWalking = 0;
+    }
 }
 

@@ -14,6 +14,8 @@ CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o: ../Include/Sprite.h
 CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o: ../Include/Unidad.h
 CMakeFiles/RTSGame.dir/Source/Controlador.cpp.o: ../Source/Controlador.cpp
 
+CMakeFiles/RTSGame.dir/Source/Datos.cpp.o: ../Source/Datos.cpp
+
 CMakeFiles/RTSGame.dir/Source/Game.cpp.o: ../Include/Choza.h
 CMakeFiles/RTSGame.dir/Source/Game.cpp.o: ../Include/Controlador.h
 CMakeFiles/RTSGame.dir/Source/Game.cpp.o: ../Include/Game.h

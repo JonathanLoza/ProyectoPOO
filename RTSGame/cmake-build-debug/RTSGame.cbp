@@ -96,6 +96,9 @@
 		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Include/Map.h">
 			<Option target="RTSGame"/>
 		</Unit>
+		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Include/Sprite.h">
+			<Option target="RTSGame"/>
+		</Unit>
 		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Include/Unidad.h">
 			<Option target="RTSGame"/>
 		</Unit>
@@ -103,6 +106,9 @@
 			<Option target="RTSGame"/>
 		</Unit>
 		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Source/Controlador.cpp">
+			<Option target="RTSGame"/>
+		</Unit>
+		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Source/Datos.cpp">
 			<Option target="RTSGame"/>
 		</Unit>
 		<Unit filename="/home/jonathan/ProyectoPOO/RTSGame/Source/Game.cpp">

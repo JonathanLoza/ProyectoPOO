@@ -23,7 +23,7 @@ protected:
     float velocidadmapa=200;
     float velocidad;
 public:
-    Unidad(int vida, int atk, int rango, int def, int velocidad): vida(vida), atk(atk), def(def),rango(rango),velocidad(velocidad), mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false), movingmouse(false),Up(false),Down(false),Left(false),Right(false){
+    Unidad(int vida, int atk, int rango, int def, float velocidad): vida(vida), atk(atk), def(def),rango(rango),velocidad(velocidad), mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight(false), mIsMovingLeft(false), movingmouse(false),Up(false),Down(false),Left(false),Right(false){
     }
     virtual ~Unidad(){}
     int get_vida();
@@ -61,33 +61,66 @@ public:
     void updateprojectile(sf::RenderWindow *window);
 };
 
-class Enemigos: public Unidad{
-public:
-    Enemigos(int vida, int atk, int def, int rango, float velocidad):Unidad(vida,atk,def,rango,velocidad){}
-    void atacar()override;
-};
 
-class Cachimbo: public Aliadas{
+class Prota: public Aliadas{
 public:
-    Cachimbo(int vida, int atk, int def, int rango, float velocidad):Aliadas(vida,atk,def,rango, velocidad){
+    Prota(int vida, int atk, int def, int rango, float velocidad):Aliadas(vida,atk,def,rango, velocidad){
         mTexture.loadFromFile("../Media/spriteWalk.png");
         sprite.sprite.setTexture(mTexture);
         sprite.rect.setSize(sf::Vector2f(32, 32));
         sprite.sprite.setPosition(dist(gen), dist(gen));
         sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
+        projectile1.rect.setFillColor(sf::Color::White);
+        projectile1.rect.setSize(sf::Vector2f(4, 4));
+    }
+};
+
+class Cachimbo: public Aliadas{
+public:
+    Cachimbo(int vida, int atk, int def, int rango, float velocidad):Aliadas(vida,atk,def,rango, velocidad){
+        mTexture.loadFromFile("../Media/character.png");
+        sprite.sprite.setTexture(mTexture);
+        sprite.rect.setSize(sf::Vector2f(32, 32));
+        sprite.sprite.setPosition(dist(gen), dist(gen));
+        sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
+        projectile1.rect.setFillColor(sf::Color::Cyan);
 
     }
 };
 
 class Mentor: public Aliadas{
 public:
-    Mentor(int vida, int atk, int def, int rango, float velocidad):Aliadas(vida,atk,def,rango, velocidad){}
-};
+    Mentor(int vida, int atk, int def, int rango, float velocidad):Aliadas(vida,atk,def,rango, velocidad){
+        mTexture.loadFromFile("../Media/player.png");
+        sprite.sprite.setTexture(mTexture);
+        sprite.rect.setSize(sf::Vector2f(32, 32));
+        sprite.sprite.setPosition(dist(gen), dist(gen));
+        sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
+        projectile1.rect.setFillColor(sf::Color::Red);
 
+    }
+};
+class Enemigos: public Unidad{
+public:
+    vector<projectile>::const_iterator iter;
+    vector<projectile> projectileAr;
+    projectile projectile1;
+    Enemigos(int vida, int atk, int def, int rango, float velocidad):Unidad(vida,atk,def,rango,velocidad){}
+    void atacar()override;
+    void updateprojectile(sf::RenderWindow *window);
+    void moverene(sf::Time deltaTime);
+
+};
 class Profesor: public Enemigos{
 public:
     Profesor(int vida, int atk, int def, int rango, float velocidad):Enemigos(vida,atk,def,rango, velocidad){
-        mTexture.loadFromFile("../Media/profe.png");
+        mTexture.loadFromFile("../Media/profesorsprite.png");
+        sprite.sprite.setTexture(mTexture);
+        sprite.rect.setSize(sf::Vector2f(32, 32));
+        sprite.sprite.setPosition(dist(gen), dist(gen));
+        sprite.sprite.setTextureRect(sf::IntRect(0,0,64,64));
+        projectile1.rect.setFillColor(sf::Color::Cyan);
+        projectile1.efe.setFillColor(sf::Color::White);
     }
 };
 

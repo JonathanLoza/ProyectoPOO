@@ -10,10 +10,10 @@
 class Sprite {
 public:
     sf::RectangleShape rect;
+    sf::CircleShape efe;
     sf::Sprite sprite;
-    //int movementSpeed = 2;
     int counterWalking = 0;
-    int direccion=0;
+    int direccion=1;
 };
 
 class projectile : public  Sprite
@@ -23,8 +23,6 @@ public:
     int movementSpeed = 10;
     int attackDamage = 5;
     int direction= 0 ;
-
-
     projectile();
     void update();
 };
