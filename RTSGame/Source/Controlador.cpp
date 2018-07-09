@@ -200,6 +200,23 @@ void Controller::checkcolisiones() {
 
 }
 
+void Controller::checkdeads() {
+    this->counter1 = 0;
+    for (iterenemigos = enemigos.begin(); iterenemigos != enemigos.end(); iterenemigos++)
+    {
+        if (!enemigos[counter1]->alive)
+        {
+            delete enemigos[counter1];
+            enemigos.erase(iterenemigos);
+            break;
+        }
+
+        counter1++;
+    }
+
+
+}
+
 
 
 

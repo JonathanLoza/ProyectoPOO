@@ -148,6 +148,7 @@ void Game::processEvents() {
 void Game::update(sf::Time deltaTime)
 {
     //map.controlador.detectar();
+    map.controlador.checkdeads();
     map.controlador.checkcolisiones();
     map.controlador.mouse_all(TimePerFrame,mousePos);
     map.controlador.move_all();

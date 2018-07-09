@@ -10,7 +10,7 @@ Map::Map(): choza(100), mIsMovingUp(false), mIsMovingDown(false), mIsMovingRight
     controlador.incluir(new Mentor(mentor_vida,mentor_atk,mentor_def,mentor_rango,mentor_velocidad));
     controlador.incluir(new Mentor(mentor_vida,mentor_atk,mentor_def,mentor_rango,mentor_velocidad));
     controlador.incluir(new Mentor(mentor_vida,mentor_atk,mentor_def,mentor_rango,mentor_velocidad));
-    for (int i = 0; i <1 ; ++i) {
+    for (int i = 0; i <10; ++i) {
         controlador.incluirenemigos(new Profesor(profesor_vida,profesor_atk,profesor_def,profesor_rango,profesor_velocidad));
     }
     mMap.setTexture(mTexture);
