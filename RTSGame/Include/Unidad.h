@@ -12,9 +12,10 @@ using namespace std;
 static auto seed = std::random_device{}();
 static auto gen = std::mt19937{ seed };
 static auto dist = std::uniform_real_distribution<>{200, 500};
-static auto dist2 = std::uniform_real_distribution<>{-700, 700};
+static auto dist2 = std::uniform_real_distribution<>{-200, 300};
 static auto dist3 = std::uniform_real_distribution<>{0, 2300};
 static auto dist4 = std::uniform_real_distribution<>{600, 2000};
+static auto dist5 = std::uniform_real_distribution<>{0, 10};
 
 class Unidad{
 protected:
@@ -58,6 +59,7 @@ public:
     vector<projectile> projectileArray;
     projectile projectile1;
     Aliadas(int vida, int atk, int def, int rango, float velocidad):Unidad(vida,atk,def,rango, velocidad){
+        sprite.temp.setSize(sf::Vector2f(32, 32));
     }
     void atacar()override;
     void moverMouse(sf::Time deltaTime,sf::Vector2f mousePos);
@@ -74,9 +76,8 @@ public:
         sprite.sprite.setPosition(dist(gen), dist(gen));
         sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
         projectile1.rect.setFillColor(sf::Color::White);
-        projectile1.rect.setSize(sf::Vector2f(4, 4));
         projectile1.lifeTime=rango;
-        projectile1.attackDamage=atk;
+        projectile1.attackDamage=this->atk;
     }
 };
 
@@ -90,7 +91,7 @@ public:
         sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
         projectile1.rect.setFillColor(sf::Color::Cyan);
         projectile1.lifeTime=rango;
-        projectile1.attackDamage=atk;
+        projectile1.attackDamage=this->atk;
 
     }
 };
@@ -105,7 +106,7 @@ public:
         sprite.sprite.setTextureRect(sf::IntRect(0,0,32,32));
         projectile1.rect.setFillColor(sf::Color::Red);
         projectile1.lifeTime=rango;
-        projectile1.attackDamage=atk;
+        projectile1.attackDamage=this->atk;
 
     }
 };
@@ -114,10 +115,16 @@ public:
     vector<projectile>::const_iterator iter;
     vector<projectile> projectileAr;
     projectile projectile1;
-    Enemigos(int vida, int atk, int def, int rango, float velocidad):Unidad(vida,atk,def,rango,velocidad){}
+    int counter = 0;
+    int movementLength = 100;
+    bool atkrandom=false;
+    Enemigos(int vida, int atk, int def, int rango, float velocidad):Unidad(vida,atk,def,rango,velocidad){
+        sprite.temp.setSize(sf::Vector2f(64, 64));
+    }
     void atacar()override;
     void updateprojectile(sf::RenderWindow *window);
     void moverene(sf::Time deltaTime);
+    void moverrandom();
 
 };
 class Profesor: public Enemigos{

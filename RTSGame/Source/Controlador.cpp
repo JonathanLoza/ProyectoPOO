@@ -155,11 +155,12 @@ void Controller::detectar() {
             uniposicion=unidades[counter1]->sprite.sprite.getPosition();
             float dx=abs(uniposicion.x-eneposicion.x);
             float dy=abs(uniposicion.y-eneposicion.y);
-            if(dx<350.0 and dy-350.0)
-                enemigos[counter2]->sprite.sprite.setPosition(unidades[counter1]->sprite.sprite.getPosition());
-
-            //unidades[counter1].update();
-            //window->draw(projectileArray[projectile1.counter].rect);
+            if(dx<50.0 and dy-50.0){
+                enemigos[counter2]->atkrandom=true;
+                break;
+            }else{
+                enemigos[counter2]->atkrandom=false;
+            }
             counter2++;
 
         }
@@ -185,7 +186,7 @@ void Controller::checkcolisiones() {
                 {
                     unidades[counter1]->projectileArray[counter2].destroy = true;
 
-                    enemigos[counter3]->vida -= unidades[counter1]->projectileArray[counter2].attackDamage;
+                    enemigos[counter3]->vida -= unidades[counter1]->get_atk();
                     if (enemigos[counter2]->vida <= 0)
                     {
                         enemigos[counter2]->alive = false;
@@ -197,11 +198,30 @@ void Controller::checkcolisiones() {
         }
         counter1++;
     }
-
+    /*this->counter1=0;
+    this->counter2=0;
+    this->counter3=0;
+    for (iteraliados = unidades.begin(); iteraliados != unidades.end(); iteraliados++)
+    {
+        for (iterenemigos = enemigos.begin(); iterenemigos != enemigos.end(); iterenemigos++)
+        {
+            if (unidades[counter1]->sprite.temp.getGlobalBounds().intersects(enemigos[counter3]->sprite.temp.getGlobalBounds()))
+            {
+                unidades[counter1]->vida -= enemigos[counter3]->get_atk();
+                if (unidades[counter1]->vida <= 0)
+                {
+                    unidades[counter1]->alive = false;
+                }
+            }
+            counter3++;
+        }
+        counter1++;
+    }*/
 }
 
 void Controller::checkdeads() {
     this->counter1 = 0;
+    this->counter2=0;
     for (iterenemigos = enemigos.begin(); iterenemigos != enemigos.end(); iterenemigos++)
     {
         if (!enemigos[counter1]->alive)
@@ -210,11 +230,32 @@ void Controller::checkdeads() {
             enemigos.erase(iterenemigos);
             break;
         }
-
         counter1++;
+    }
+    for (iteraliados = unidades.begin(); iteraliados != unidades.end(); iteraliados++)
+    {
+        if (!unidades[counter2]->alive)
+        {
+            delete unidades[counter2];
+            unidades.erase(iteraliados);
+            break;
+        }
+        counter2++;
     }
 
 
+}
+
+void Controller::randomenem() {
+    for(auto unidad:enemigos){
+        unidad->moverrandom();
+    }
+}
+
+void Controller::boolrandom(bool isPressed) {
+    for(auto unidad:enemigos){
+        unidad->atkrandom=isPressed;
+    }
 }
 
 

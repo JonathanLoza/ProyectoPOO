@@ -10,6 +10,7 @@
 class Sprite {
 public:
     sf::RectangleShape rect;
+    sf::RectangleShape temp;
     sf::CircleShape efe;
     sf::Sprite sprite;
     int counterWalking = 0;

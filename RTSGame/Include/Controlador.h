@@ -22,6 +22,7 @@ public:
     void incluirenemigos(Enemigos* unidad);
     void move_all();
     void enemove();
+    void randomenem();
     void projdraw(sf::RenderWindow* window);
     void mouse_all(sf::Time deltaTime, sf::Vector2f mousePos);
     void draw_all(sf::RenderWindow* window);
@@ -34,6 +35,7 @@ public:
     void boolLeft(bool isPressed);
     void booleneLeft(bool isPressed);
     void boolmouse(bool isPressed);
+    void boolrandom(bool isPressed);
     void detectar();
     void atk_all();
     void eneatk();

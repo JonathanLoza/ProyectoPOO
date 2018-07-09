@@ -5,7 +5,7 @@
 #include "../Include/Sprite.h"
 projectile::projectile()
 {
-    rect.setSize(sf::Vector2f(4, 4));
+    rect.setSize(sf::Vector2f(6, 6));
     rect.setPosition(400, 200);
     efe.setPosition(400, 200);
     efe.setRadius(10);

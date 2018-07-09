@@ -135,7 +135,7 @@ void Aliadas::moverMouse(sf::Time deltaTime, sf::Vector2f mousePos) {
             sprite.counterWalking = 0;
         }
     }
-    sprite.rect.setPosition(sprite.sprite.getPosition());
+    sprite.temp.setPosition(sprite.sprite.getPosition());
 }
 
 void Aliadas::updateprojectile(sf::RenderWindow *window) {
@@ -169,7 +169,7 @@ void Aliadas::atacar() {
 
 void Enemigos::atacar() {
     projectile1.efe.setPosition(sprite.sprite.getPosition().x+sprite.sprite.getGlobalBounds().width/2-projectile1.efe.getRadius(),
-                                 sprite.sprite.getPosition().y+sprite.sprite.getGlobalBounds().height/2-projectile1.efe.getRadius());
+                                sprite.sprite.getPosition().y+sprite.sprite.getGlobalBounds().height/2-projectile1.efe.getRadius());
     projectile1.direction = sprite.direccion;
     projectileAr.push_back(projectile1);
 }
@@ -231,6 +231,54 @@ void Enemigos::moverene(sf::Time deltaTime) {
     {
         sprite.counterWalking = 0;
     }
-    sprite.rect.setPosition(sprite.sprite.getPosition());
+    sprite.temp.setPosition(sprite.sprite.getPosition());
+}
+
+void Enemigos::moverrandom() {
+    atkrandom=false;
+    if (sprite.direccion == 1) // Up
+    {
+        sprite.sprite.move(0,-velocidad);
+        sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 64, 64 * 3, 64, 64));
+    }
+    else if (sprite.direccion == 2) // Down
+    {
+        sprite.sprite.move(0,velocidad);
+        sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 64, 0, 64, 64));
+    }
+    else if (sprite.direccion == 3) // Left
+    {
+        sprite.sprite.move(-velocidad,0);
+        sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 64, 64* 1, 64, 64));
+    }
+    else if (sprite.direccion == 4) // Right
+    {
+        sprite.sprite.move(velocidad,0);
+        sprite.sprite.setTextureRect(sf::IntRect(sprite.counterWalking * 64, 64* 2, 64,64));
+    }
+    else
+    {
+        // No movement
+    }
+
+    sprite.counterWalking++;
+    if (sprite.counterWalking == 3)
+    {
+        sprite.counterWalking = 0;
+    }
+
+    counter++;
+    if (counter >= movementLength)
+    {
+        sprite.direccion = static_cast<int>(dist5(gen));
+        //atacar();
+        counter = 0;
+    }
+    /*if(sprite.direccion%3==0){
+        atkrandom=true;
+    }else{
+        atkrandom=false;
+    }*/
+
 }
 
